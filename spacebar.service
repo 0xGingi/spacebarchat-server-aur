@@ -1,0 +1,13 @@
+[Unit]
+Description=Spacebar, for better and secure communication
+
+[Service]
+User=
+WorkingDirectory=/opt/spacebar
+ExecStart=npm run start
+Restart=always
+StandardError=journal
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
